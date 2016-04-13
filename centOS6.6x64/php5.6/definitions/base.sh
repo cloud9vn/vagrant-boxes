@@ -7,7 +7,7 @@ EOM
 # Install REMI Repository 
 yum install -y http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 #install php5.6 and Apache 2.2
-yum install -y php php56-php-mbstring php56-php-pdo php-pgsql --enablerepo=remi,remi-php56
+yum install -y php php-mbstring php-pdo php-pgsql php-xml php-pear --enablerepo=remi,remi-php56
 chkconfig httpd on
 # Install Postgresql
 rpm -Uvh http://yum.postgresql.org/9.4/redhat/rhel-6-x86_64/pgdg-centos94-9.4-1.noarch.rpm
